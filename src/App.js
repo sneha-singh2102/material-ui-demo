@@ -1,11 +1,15 @@
 import React from 'react';
-import Teaser from './components/Teaser';
+import Navbar from './components/Navbar/Navbar';
+import { Outlet } from "react-router-dom";
+import Grid from '@mui/material/Grid';
 
 function App() {
+
   return (
-    <div className="App">
-      <Teaser />
-    </div>
+    <Grid container>
+      <Navbar />
+      <Outlet />
+    </Grid>
   );
 }
 
